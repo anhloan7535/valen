@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pink Multi Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Trang 1 -->
+    <div class="page" id="page1">
+      <h1>Hii cưng, bấm vào ô bên dưới nè</h1>
+
+      <button onclick="goPage(2)">Ở đây</button>
+    </div>
+
+    <!-- Trang 2 -->
+    <div class="page hidden" id="page2">
+      <div class="cute-card">
+        <div class="cute-image">
+          <img src="./video.mp4/bông hoa.jpg" alt="cute" />
+        </div>
+
+        <h2>Valentine day</h2>
+        <p>Tặng cậu này. Chúc cậu có một ngày thật vui và đầy năng lượng.</p>
+        <p>Cảm ơn cậu đã đến và đồng hành cùng mình trong thời gian qua.</p>
+        <p>Cảm ơn cậu rất nhiều \(O.O)/</p>
+
+        <div class="btn-group">
+          <button onclick="goPage(3)">Mở tiếp</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trang 3 -->
+    <div class="page hidden scroll-page" id="page3">
+      <div class="content-box">
+        <h2>For youuuuuuuu</h2>
+
+        <div class="video-box">
+          <video controls>
+            <source src="./video.mp4/meoo.mp4" type="video/mp4" />
+            Trình duyệt của bạn không hỗ trợ video.
+          </video>
+          <p>\(O.O)/</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
